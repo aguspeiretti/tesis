@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "glimer";
+  src: url("./assets/fonts/GilmerBold.otf");
+}
+@font-face {
+  font-family: "glimerRegular";
+  src: url("./assets/fonts/Gilmer-Regular.otf");
+}
+
+:root {
+  --color-primario: #080e2c;
+  --color-secundario: #0094ea;
+  --color-blanco: #fff;
+  --color-negro: #000;
+  --color-blancoTransparente: #ffffffc3;
+  font-family: "glimer";
+  color: var(--color-primario);
+}

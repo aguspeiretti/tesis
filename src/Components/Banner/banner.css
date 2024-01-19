@@ -1,0 +1,22 @@
+.bannerContainer{
+    width: 100vw;
+    height: 55px;
+    background-color: var(--color-primario);
+    display: flex;
+    color: var(--color-blanco);
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.bannerContainer p{
+    padding:0 5px;
+}
+.whaContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whaContainer img{
+    height: 32%;
+}

@@ -1,0 +1,25 @@
+.flotante{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 55px;
+    background-color: var(--color-primario);
+    display: flex;
+    color: var(--color-blanco);
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.botonCookies{
+    padding: 10px 10px;
+     background-color: var(--color-secundario);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 5px;
+     font-family: "glimeRegular" ,'Roboto', sans-serif;
+     color: var(--color-blanco);
+     font-size: 12px;
+     margin: 0 10px;
+     
+}

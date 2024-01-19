@@ -1,0 +1,62 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  width: 70vw;
+  height: 80vh;
+  background: #ffffffef;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ffffff;
+}
+.preguntasContainer {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.nombre {
+  color: var(--color-secundario);
+}
+.usuario {
+  margin-bottom: 10px;
+}
+.servicio {
+  color: var(--color-secundario);
+}
+.serv {
+  margin-bottom: 10px;
+}
+.ayuda {
+  text-decoration: underline;
+}
+.title {
+  font-size: 20px;
+  text-decoration: underline;
+  color: var(--color-secundario);
+}
+.slot {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.preguntas {
+  margin-top: 10px;
+}
