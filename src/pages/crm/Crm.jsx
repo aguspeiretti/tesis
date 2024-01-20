@@ -1,8 +1,6 @@
-import logo from "../../assets/Recurso-3.png";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import "./crm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown, faStar } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const servicesData = {
@@ -32,8 +30,8 @@ const Crm = () => {
   return (
     <>
       {" "}
-      <div className="App">
-        <div className="navbar">
+      <div className="crmContainer">
+        <div className="navbar1">
           <div className="nav-header" onClick={handleServicesToggle}>
             <div className="contNav">
               <p>Servicios</p>

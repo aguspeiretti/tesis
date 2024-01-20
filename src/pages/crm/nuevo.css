@@ -1,8 +1,8 @@
-.crmContainer {
+.App {
   display: flex;
 }
 
-.navbar1 {
+.navbar {
   display: flex;
   flex-direction: column;
   background-color: #3498db;
