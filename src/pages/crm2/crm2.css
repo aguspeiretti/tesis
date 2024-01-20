@@ -1,0 +1,114 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App2 {
+  width: 100vw;
+  height: calc(100vh - 120px);
+  justify-content: center;
+}
+/* Estilos del botón de servicios */
+.btnServicios {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 60px;
+  background-color: #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btnServicios:hover {
+  transform: scale(1.1);
+}
+
+.btnServicios:active {
+  transform: scale(0.9);
+}
+
+.icon {
+  font-size: 24px;
+  color: #000;
+}
+
+/* Estilos del menú lateral */
+.navbar {
+  position: fixed;
+  top: 160px;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: 0.3s transform;
+}
+
+.navbar.open {
+  transform: translateX(0);
+}
+
+.nav-list2 {
+  list-style: none;
+  padding: 20px;
+}
+
+.nav-item2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-item2:hover {
+  background-color: #e0e0e0;
+}
+
+.sub-nav-list2 {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.subLista2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.subLista2:hover {
+  background-color: #e0e0e0;
+}
+
+/* Estilos del contenido */
+.content2 {
+  padding: 10px;
+}
+
+.service-info2 {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service-info2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.service-info2 p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  line-height: 1.5;
+}
