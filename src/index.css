@@ -15,4 +15,8 @@
   --color-blancoTransparente: #ffffffc3;
   font-family: "glimer";
   color: var(--color-primario);
+  overflow: hidden;
+}
+:root a {
+  text-decoration: none;
 }

@@ -1,7 +1,62 @@
+.headerContainer1 {
+  width: 100vw;
+  height: 60px;
+  background-color: var(--color-secundario);
+}
+.itemCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+.logoLink {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgContainer img {
+  height: 80%;
+}
+
 .headerContainer a {
   text-decoration: none;
   color: var(--color-primario);
 }
 .headerContainer a:hover {
   color: var(--color-secundario);
+}
+.opcion {
+  color: var(--color-primario);
+  margin-left: 40px;
+}
+@media screen and (max-width: 767px) {
+  .headerContainer1 {
+    height: 50px;
+  }
+  .itemCont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 10px;
+  }
+  .imgContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .opcion {
+    margin-left: 50px;
+  }
 }

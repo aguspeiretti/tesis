@@ -14,22 +14,24 @@ const Opciones = () => {
 
   return (
     <>
-      <div className="headerContainer">
-        <NavLink className={"logoLink"} to={"/"}>
-          <div className="imgContainer">
-            <img src={logo} alt="Logo" />
-          </div>
-        </NavLink>
-        <NavLink>
-          <div onClick={() => handleSelect("opcion1")} className="opcion">
-            Opcion 1
-          </div>
-        </NavLink>
-        <NavLink>
-          <div onClick={() => handleSelect("opcion2")} className="opcion">
-            Opcion 2
-          </div>
-        </NavLink>
+      <div className="headerContainer1">
+        <div className="itemCont">
+          <NavLink className={"logoLink"} to={"/"}>
+            <div className="imgContainer">
+              <img src={logo} alt="Logo" />
+            </div>
+          </NavLink>
+          <NavLink>
+            <div onClick={() => handleSelect("opcion1")} className="opcion">
+              Opcion 1
+            </div>
+          </NavLink>
+          <NavLink>
+            <div onClick={() => handleSelect("opcion2")} className="opcion">
+              Opcion 2
+            </div>
+          </NavLink>
+        </div>
 
         {/* <div className="buttonContainer">Presupuesto</div> */}
       </div>

@@ -1,9 +1,8 @@
-import logo from "../../assets/Recurso-3.png";
+import { faCaretDown, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import "./crm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown, faStar } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import TablaComponent from "../../Components/Tabla/TablaComponent";
 
 const servicesData = {
   Grado: ["Tesis de Grado", "Trabajo Practico", "Monografia", "Ensayo"],
@@ -16,8 +15,14 @@ const Crm = () => {
   const [selectedLevel, setSelectedLevel] = useState(null);
   const [selectedService, setSelectedService] = useState(null);
 
+  const [isUsersOpen, setUsersOpen] = useState(false);
+  const [selected, setSelected] = useState(null);
+
   const handleServicesToggle = () => {
     setServicesOpen(!isServicesOpen);
+    setUsersOpen(false);
+    setSelectedService(null);
+    setSelected(null);
   };
 
   const handleLevelSelect = (level) => {
@@ -29,11 +34,21 @@ const Crm = () => {
     setSelectedService(service);
   };
 
+  const handleUsersToggle = () => {
+    setUsersOpen(!isUsersOpen);
+    setServicesOpen(false); // Asegúrate de cerrar la sección de Servicios al abrir la de Usuarios
+    setSelected(null);
+  };
+  const handleSelect = () => {
+    setSelected(!selected);
+    setSelectedService(null);
+  };
+
   return (
     <>
       {" "}
-      <div className="App">
-        <div className="navbar">
+      <div className="crmContainer">
+        <div className="navbar1">
           <div className="nav-header" onClick={handleServicesToggle}>
             <div className="contNav">
               <p>Servicios</p>
@@ -107,6 +122,22 @@ const Crm = () => {
               </li>
             </ul>
           )}
+          <div className="nav-header" onClick={handleUsersToggle}>
+            <div className="contNav">
+              <p>Usuarios</p>
+              <FontAwesomeIcon className="arrowdown" icon={faCaretDown} />
+            </div>
+          </div>
+          {isUsersOpen && (
+            <ul className="nav-list">
+              <li>
+                <div className="nav-item" onClick={() => handleSelect("Tabla")}>
+                  Tabla
+                  <FontAwesomeIcon icon={faCaretRight} />
+                </div>
+              </li>
+            </ul>
+          )}
         </div>
 
         <div className="content">
@@ -114,6 +145,11 @@ const Crm = () => {
             <div className="service-info">
               <h2>{selectedService}</h2>
               <p>Información detallada sobre {selectedService}.</p>
+            </div>
+          )}
+          {selected && (
+            <div className="user-info">
+              <TablaComponent />
             </div>
           )}
         </div>

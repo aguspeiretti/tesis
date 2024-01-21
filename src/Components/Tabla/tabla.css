@@ -1,6 +1,7 @@
 .tabla-container {
   width: 80%;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 table {
@@ -22,4 +23,7 @@ th {
 
 tr:hover {
   background-color: #f5f5f5;
+}
+.tablaTitulo {
+  margin-bottom: 20px;
 }
