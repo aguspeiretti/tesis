@@ -36,6 +36,7 @@
 .opcion {
   color: var(--color-primario);
   margin-left: 40px;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .headerContainer1 {

@@ -4,6 +4,7 @@ import "./opciones.css";
 import Crm from "../crm/Crm";
 import { useState } from "react";
 import Crm2 from "../crm2/Crm2";
+import Crm3 from "../crm3/Crm3";
 
 const Opciones = () => {
   const [select, setSelect] = useState("opcion1");
@@ -31,6 +32,9 @@ const Opciones = () => {
               Opcion 2
             </div>
           </NavLink>
+          <div onClick={() => handleSelect("opcion3")} className="opcion">
+            Opcion 3
+          </div>
         </div>
 
         {/* <div className="buttonContainer">Presupuesto</div> */}
@@ -42,6 +46,10 @@ const Opciones = () => {
       ) : select == "opcion2" ? (
         <div>
           <Crm2 />
+        </div>
+      ) : select == "opcion3" ? (
+        <div>
+          <Crm3 />
         </div>
       ) : null}
     </>

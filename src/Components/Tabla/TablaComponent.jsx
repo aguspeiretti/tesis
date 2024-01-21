@@ -12,7 +12,7 @@ const TablaComponent = () => {
 
   return (
     <div className="tabla-container">
-      <h1 className="tablaTitulo">Tabla de usuarios</h1>
+      <h1 className="tablaTitulo">Tabla de Clientes</h1>
       <table>
         <thead>
           <tr>

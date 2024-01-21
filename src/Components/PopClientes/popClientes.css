@@ -1,0 +1,7 @@
+.clientesPopCont {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(70, 70, 70);
+  border-radius: 20px;
+  display: flex;
+}

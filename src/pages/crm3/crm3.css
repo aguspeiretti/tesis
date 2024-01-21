@@ -1,0 +1,184 @@
+.crm3Contenedor {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background-color: rgb(226, 226, 226);
+  display: flex;
+}
+.navCrm {
+  width: 150px;
+  height: 100%;
+  background-color: rgb(25, 25, 25);
+  padding: 10px;
+  color: white;
+}
+.contentt {
+  width: 100%;
+  height: 100%;
+  background-color: #aac2d2;
+}
+.boton3 {
+  padding: 10px;
+  border: 1px solid rgb(160, 160, 160);
+  border-radius: 10px;
+  font-family: "glimerRegular";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.boton3:hover {
+  background-color: rgb(160, 160, 160);
+  color: rgb(25, 25, 25);
+}
+
+.popContainerServicios {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crmContainer {
+  display: flex;
+}
+
+.navbar1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-secundario);
+  color: #fff;
+  padding: 5px;
+  width: 150px;
+  height: calc(100vh - 60px);
+}
+
+.nav-header {
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+.contNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-blanco);
+}
+.nav-header:hover {
+  background-color: var(--color-primario);
+  border-radius: 5px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item:hover {
+  background-color: var(--color-primario);
+  border-radius: 5px;
+}
+
+.sub-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #2980b9;
+  font-size: 13px;
+}
+
+.sub-nav-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sub-nav-list li:hover {
+  background-color: var(--color-primario);
+  border-radius: 5px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services div {
+  padding: 10px;
+  margin: 5px;
+  background-color: #2ecc71;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.services div:hover {
+  background-color: #27ae60;
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  height: calc(100vh - 120px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-info h2 {
+  color: var(--color-primario);
+}
+
+.service-info p {
+  color: var(--color-secundario);
+}
+
+.User-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  height: calc(100vh - 120px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.User-info h2 {
+  color: var(--color-primario);
+}
+
+.User-info p {
+  color: var(--color-secundario);
+}
