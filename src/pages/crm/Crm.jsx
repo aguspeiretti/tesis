@@ -3,6 +3,7 @@ import "./crm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import TablaComponent from "../../Components/Tabla/TablaComponent";
+import { faCaretDown, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 const servicesData = {
   Grado: ["Tesis de Grado", "Trabajo Practico", "Monografia", "Ensayo"],

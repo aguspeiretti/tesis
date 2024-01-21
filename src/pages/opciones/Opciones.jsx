@@ -6,7 +6,7 @@ import { useState } from "react";
 import Crm2 from "../crm2/Crm2";
 
 const Opciones = () => {
-  const [select, setSelect] = useState("");
+  const [select, setSelect] = useState("opcion1");
 
   const handleSelect = (value) => {
     setSelect(value);
