@@ -1,4 +1,4 @@
-import { faCaretDown, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../assets/Recurso-3.png";
 import "./crm.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
