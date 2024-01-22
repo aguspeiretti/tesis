@@ -1,0 +1,140 @@
+.contPrincipal {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 100px;
+    overflow: hidden;
+    color: rgb(233, 233, 233);
+  }
+  
+  .containerAbierto {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 500px;
+    padding: 32px;
+  }
+  
+  button {
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    color: #f9f9f9;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 16px;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+  }
+  
+  button#close-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f6f6f6;
+  }
+  
+  button#close-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  button#servicios-btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f9f9f9;
+    margin-bottom: 16px;
+    position: absolute;
+    top:100px;
+    left:50px
+
+  
+  
+  }
+  .tituloP{
+    margin-bottom:15px ;
+}
+.selecciona{
+    margin-bottom:15px ;
+}
+  button#servicios-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  select {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    color: #f9f9f9;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 32px;
+  }
+  
+  select:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+  }
+  
+  .popup {
+    position: relative;
+  }
+  
+  .service-informacion {
+    margin-top: 32px;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background-color: rgb(212, 212, 212);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    
+ 
+  }
+  .tituloSelected{
+    color: #1f2937;
+    margin-bottom: 30px;
+  }
+  .infoSelected{
+    color: #1f2937;
+    margin-bottom: 30px;
+  }
+  button#back-btn {
+    background-color: rgba(0, 0, 0, 0.345);
+    color: #ffffff;
+    margin-top: 16px;
+  }
+  
+  button#back-btn:hover {
+    background-color: rgba(4, 50, 67, 0.2);
+  }
+
+  option{
+    color: #1f2937;
+  }
