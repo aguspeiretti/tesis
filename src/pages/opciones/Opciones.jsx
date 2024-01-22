@@ -7,7 +7,7 @@ import Crm2 from "../crm2/Crm2";
 import Crm3 from "../crm3/Crm3";
 
 const Opciones = () => {
-  const [select, setSelect] = useState("opcion1");
+  const [select, setSelect] = useState("opcion3");
 
   const handleSelect = (value) => {
     setSelect(value);
